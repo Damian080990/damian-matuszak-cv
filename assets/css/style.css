@@ -66,8 +66,10 @@ Variables
         --submitButtonBgColorHover: #0099E5;
         --resumeItemPeriodColor: #f5f5f5;
         --resumeItemCompanyColor: #aaa;
-        --resumeMainTitleColor: ##f5f5f5;
+        --resumeMainTitleColor: #f5f5f5;
         --resumeDescColor: #d5d5d5;
+        --skillsBorderColor: #517c91;
+        --skillsColor: #0099E5;
 
 
     }
@@ -125,6 +127,8 @@ Variables
         --resumeItemCompanyColor: #aaa;
         --resumeMainTitleColor: #333333;
         --resumeDescColor: #666;
+        --skillsBorderColor: #517c91;
+        --skillsColor: #0099E5;
     }
 }
 
@@ -744,6 +748,44 @@ summary .summary-data p:last-of-type {
 
 .resume .container .sites .resume-right {
     width: 40%
+}
+
+.resume .container .sites .resume-right .border-skills {
+    width: 100%;
+    border: 2px solid var(--skillsBorderColor);
+    border-radius: 20px;
+    position: relative;
+    height: 10px;
+    z-index: 2;
+    display: flex;
+    padding-left: 1px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.resume .container .sites .resume-right .border-skills .skills {
+    background-color: var(--skillsColor);
+    border-radius: 20px;
+    position: absolute;
+    width: 95%;
+    height: 70%;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.resume .container .sites .resume-right .skill-item {
+    margin: 0 0 20px 0;
+}
+
+.resume .container .sites .resume-right .skills-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .container .sites .resume-right .skills-description span {
+    color: var(--resumeDescColor);
 }
 
 /*************  SEKCJA PORTFOLIO ***************/
