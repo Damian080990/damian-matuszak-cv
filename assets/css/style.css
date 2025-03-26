@@ -465,6 +465,7 @@ sekcja pierwsza !!
 
 }
 
+
 .summary .summary-data .rank {
     margin: 0 0 5px 0;
     font-weight: 300;
@@ -562,6 +563,8 @@ summary .summary-data p:last-of-type {
     line-height: 1.5;
     margin: 0;
     color: var(--worksDataPcolor);
+    text-align: justify;
+
 }
 
 /* wyswietlamy wszystko w 1 rzedzie na mobilu */
