@@ -64,6 +64,12 @@ Variables
         --submitButtonTextColorHover: #fff;
         --submitButtonBgColor: #222;
         --submitButtonBgColorHover: #0099E5;
+        --resumeItemPeriodColor: #f5f5f5;
+        --resumeItemCompanyColor: #aaa;
+        --resumeMainTitleColor: ##f5f5f5;
+        --resumeDescColor: #d5d5d5;
+
+
     }
 }
 
@@ -115,7 +121,10 @@ Variables
         --submitButtonTextColorHover: #fff;
         --submitButtonBgColor: #fff;
         --submitButtonBgColorHover: #0099E5;
-
+        --resumeItemPeriodColor: #333333;
+        --resumeItemCompanyColor: #aaa;
+        --resumeMainTitleColor: #333333;
+        --resumeDescColor: #666;
     }
 }
 
@@ -481,6 +490,7 @@ sekcja pierwsza !!
 .summary .summary-data p {
     line-height: 1.85;
     color: var(--summarypFontColor);
+    text-align: justify;
 }
 
 summary .summary-data p:last-of-type {
@@ -644,6 +654,96 @@ summary .summary-data p:last-of-type {
         text-align: center;
         gap: 10px;
     }
+}
+
+/***************** SEKCJA RESUME ********************/
+.resume {
+    margin: 25px 0 0 0;
+    background-color: var(--mainSectionBgColor);
+}
+
+.resume .container .sites {
+    display: flex;
+    padding: 0 0 10px 0;
+}
+
+.resume .container .sites .resume-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resume .container .sites .resume-left .resume-entry {
+    display: flex;
+    flex-direction: row;
+    /* Zachowuje układ wierszowy dla każdego wpisu */
+    margin-bottom: 20px;
+    /* Dodaje odstęp między wpisami */
+}
+
+.resume .container .sites .resume-left .resume-years-col {
+    width: 20%;
+    text-align: center;
+    padding: 0 25px 0 0;
+}
+
+.resume .container .sites .resume-left .resume-years-col .item-period {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: var(--resumeItemPeriodColor);
+}
+
+.resume .container .sites .resume-left .resume-years-col .item-company {
+    display: block;
+    color: var(--resumeItemCompanyColor);
+}
+
+.resume .container .sites .resume-left .resume-desc-col {
+    width: 80%;
+    padding: 0 25px 0 15px;
+}
+
+.resume .container .sites .resume-left .resume-desc-col p {
+    margin: 0 0 10px 0;
+    padding: 5px 0 0 0;
+    color: var(--resumeDescColor);
+    font-size: .92rem;
+}
+
+.resume .container .sites .resume-left .resume-desc-col ul li {
+    margin: 5px 0;
+    color: var(--resumeDescColor);
+    font-size: .92rem;
+}
+
+.resume .container .sites .resume-left .resume-desc-col ul li:first-child {
+    font-weight: 700;
+}
+
+.resume .container .sites .resume-left .resume-desc-col ul li:last-child {
+    margin: 0 0 15px 0;
+}
+
+.resume .container .sites .resume-left .resume-desc-col .main-title {
+    margin: 3px 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--resumeMainTitleColor)
+}
+
+.resume .container .sites .resume-left .resume-desc-col ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume .container .sites .resume-right {
+    width: 40%
 }
 
 /*************  SEKCJA PORTFOLIO ***************/
