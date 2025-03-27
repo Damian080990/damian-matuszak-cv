@@ -791,6 +791,32 @@ summary .summary-data p:last-of-type {
     color: var(--resumeDescColor);
 }
 
+@media (max-width: 768px) {
+    .resume .container .sites {
+        flex-direction: column;
+    }
+
+    .resume .container .sites .resume-left,
+    .resume .container .sites .resume-right {
+        width: 100%;
+    }
+
+    .resume .container .sites .resume-left .resume-entry {
+        flex-direction: column;
+    }
+
+    .resume .container .sites .resume-left .resume-years-col,
+    .resume .container .sites .resume-left .resume-desc-col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .resume .container .sites .resume-left .resume-years-col {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
+
 /*************  SEKCJA PORTFOLIO ***************/
 .portfolio {
     margin: 25px 0 0 0;
@@ -1156,7 +1182,7 @@ summary .summary-data p:last-of-type {
 
 @media (max-width: 768px) {
     .contact .icons .item {
-        width: 50%;
+        width: 100%;
     }
 
     .contact .forms .form {
