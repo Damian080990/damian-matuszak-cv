@@ -11,9 +11,10 @@ Variables
     --rankFontColor: #888;
     --mainPaddingMobile: 0 15px;
     scroll-behavior: smooth;
-
-
-
+    --modalBgColor: rgba(0, 0, 0, 0.5);
+    --modalContentBgColor: #fff;
+    --modalButtonTextColor: #fff;
+    --modalButtonHoverColor: #0056b3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -936,14 +937,14 @@ summary .summary-data p:last-of-type {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--modalBgColor);
     justify-content: center;
     align-items: center;
 }
 
 /* Styl zawartości modala */
 .modal-content {
-    background: white;
+    background: var(--modalContentBgColor);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -965,14 +966,14 @@ summary .summary-data p:last-of-type {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--mainColor);
+    color: var(--modalButtonTextColor);
     text-decoration: none;
     border-radius: 5px;
 }
 
 .view-demo:hover {
-    background-color: #0056b3;
+    background-color: var(--modalButtonHoverColor);
 }
 
 /************  CONTACT  **************/
@@ -1099,8 +1100,6 @@ summary .summary-data p:last-of-type {
     color: var(--varFormsTextColor);
 
 }
-
-.contact .forms .form .form-right-column .row #i-msg {}
 
 .contact .forms .form .row .submit-button {
     display: block;
