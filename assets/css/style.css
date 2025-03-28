@@ -962,7 +962,8 @@ summary .summary-data p:last-of-type {
 }
 
 /* Przycisk View Demo */
-.view-demo {
+.view-demo,
+.view-repo {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
@@ -972,7 +973,8 @@ summary .summary-data p:last-of-type {
     border-radius: 5px;
 }
 
-.view-demo:hover {
+.view-demo:hover,
+.view-repo:hover {
     background-color: var(--modalButtonHoverColor);
 }
 
