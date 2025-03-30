@@ -14,7 +14,7 @@ const modalLink = document.getElementById("modal-link");
 const modalRepoLink = document.getElementById("modal-repo-link");
 const closeBtn = document.querySelector(".close");
 
-// Pobranie wszystkich elementów portfolio
+// Pobranie elementów portfolio
 const portfolioItems = document.querySelectorAll(".portfolio-item .portfolio-picture");
 
 const portfolioDetails = {
@@ -50,7 +50,7 @@ const portfolioDetails = {
     },
 }
 
-// Iteracja po wszystkich obrazkach i dodanie event listenera
+// Iteracja po portfolio i dodanie event listenera
 portfolioItems.forEach(item => {
     item.addEventListener("click", function () {
         const title = this.querySelector(".description").innerText;
