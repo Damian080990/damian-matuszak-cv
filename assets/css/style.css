@@ -578,7 +578,7 @@ summary .summary-data p:last-of-type {
 /* sekcja testimonials */
 
 .testimonials {
-    padding: 25px 0 0 0;
+    padding: 25px 0 25px 0;
     background-color: var(--mainSectionBgColor);
 }
 
