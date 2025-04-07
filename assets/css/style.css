@@ -466,6 +466,12 @@ sekcja pierwsza !!
 
 }
 
+.summary .summary-data .phone-number {
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
 
 .summary .summary-data .rank {
     margin: 0 0 5px 0;
