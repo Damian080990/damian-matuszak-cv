@@ -469,7 +469,11 @@ sekcja pierwsza !!
 .summary .summary-data .phone-number {
     font-weight: 700;
     font-size: 1.2em;
-    text-decoration: underline;
+
+}
+
+.summary .summary-data .phone-number a {
+    color: var(--summarypFontColor);
 }
 
 
