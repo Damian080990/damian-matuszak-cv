@@ -48,6 +48,11 @@ const portfolioDetails = {
         repoLink: 'https://github.com/Damian080990/cv',
         description: "Customizable resume template developed using HTML5, CSS3, and vanilla JavaScript."
     },
+    "Snake - simple game": {
+        link: "https://www.youtube.com/shorts/F0Nm0R6H05I",
+        repoLink: 'https://github.com/Damian080990/snake-python-simple-game/',
+        description: "Classic Snake Game developed using Python with Turtle for graphics and Pygame for sound effects."
+    },
 }
 
 // Iteracja po portfolio i dodanie event listenera
